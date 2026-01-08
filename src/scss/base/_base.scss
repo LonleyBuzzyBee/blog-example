@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/tty2ash.css");
+
+body {
+  margin: 0;
+  background-color: #000F08;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  font-family: "pragmatica", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  background-color: #000F08;
+  font-family: "pragmatica", sans-serif;
+  overflow-y: scroll;
+}

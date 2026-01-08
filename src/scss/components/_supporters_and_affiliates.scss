@@ -1,0 +1,56 @@
+.supporters_and_affiliates_section{
+   @include respond(ipad) {
+     width: 100%;
+   }
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   background-color: #EEF0F2;
+   overflow: hidden!important;
+   
+   
+   &_top{
+     display: flex;
+     flex-direction: row;
+     
+     hr{
+       width: 55%;
+       
+      }
+      h2{
+        color:#780116;
+      }
+    }
+    
+    &_bottom{
+      @include respond(ipad) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+.supporters_card_section{
+    @include respond(ipad) {
+      width: 90%;
+  }
+  width: 20%;
+  flex-direction: row!important;
+  background-color:rgba(255, 255, 255, 0)!important;
+  box-shadow: none;
+  border: none!important;
+  align-items: center;
+  
+  strong{
+    color: #F34213!important;
+  }
+  &_img{
+    @include respond(ipad) {
+      width: 40%;
+  }
+    width:40%!important;
+  }
+}

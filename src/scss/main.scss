@@ -1,0 +1,14 @@
+@import './base/base';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+// base, and abstracts files
+
+@import './components/banner';
+@import './components/nav_bar';
+@import './components/landing_bio';
+@import './components/articles_section';
+@import './components/about_bio_section';
+@import './components/board_of_directors_section';
+@import './components/supporters_and_affiliates';
+@import './components/articles_list_all_section';
+@import './components/meetings_info';

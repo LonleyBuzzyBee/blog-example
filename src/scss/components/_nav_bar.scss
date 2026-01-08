@@ -1,0 +1,242 @@
+.logo-oswc{
+  margin-left: 3.5em;
+  width: 3em;
+  background-color: #6F1A07;
+  border-radius: 50%;
+}
+
+.navbar-brand{
+  @include respond(ipad) {
+    display: inherit!important;
+  }
+  display: none!important;
+}
+
+.navbar-toggler{
+  background-color: #6F1A07!important;
+  border-color: #F7F3E3!important;
+
+  &-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(247, 243, 227, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+  }
+}
+
+.navbar{
+  background-color: #6F1A07!important;
+  &-nav{
+    color: black!important;
+    --bs-nav-link-color:#F7F3E3!important;
+    --bs-nav-link-hover-color: black!important;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    li{
+      margin: 0% 3%;
+    }
+  }
+}
+
+.collapse{
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.sticky-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-brand{
+  width:6%;
+  display: flex;
+  justify-content: center;
+}
+
+// Desktop navbar - hide on tablet and smaller
+.desktop-navbar {
+  @include respond(ipad) {
+    display: none!important;
+  }
+}
+
+// Mobile/Tablet Ionic-style Navbar
+.mobile-navbar {
+  display: none;
+  
+  @include respond(ipad) {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .mobile-toolbar {
+    background-color: #6F1A07;
+    color: #F7F3E3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    min-height: 56px;
+
+    &-start {
+      display: flex;
+      align-items: center;
+    }
+
+    &-end {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .mobile-navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-left: 8px;
+    background-color: #6F1A07;
+    border-radius: 50%;
+    padding: 4px;
+  }
+
+  .mobile-menu-button {
+    background-color: transparent;
+    border: 2px solid #F7F3E3;
+    border-radius: 4px;
+    color: #F7F3E3;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(247, 243, 227, 0.1);
+    }
+
+    ion-icon {
+      font-size: 24px;
+      color: #F7F3E3!important;
+    }
+  }
+
+  // Side Menu
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+
+    &.menu-open {
+      transform: translateX(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    &-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 280px;
+      max-width: 85%;
+      height: 100%;
+      background-color: #6F1A07;
+      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    &-header {
+      background-color: #6F1A07;
+      color: #F7F3E3;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(247, 243, 227, 0.2);
+      min-height: 56px;
+    }
+
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #F7F3E3;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &-close {
+      background-color: transparent;
+      border: 2px solid #F7F3E3;
+      border-radius: 4px;
+      color: #F7F3E3;
+      cursor: pointer;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(247, 243, 227, 0.1);
+      }
+
+      ion-icon {
+        font-size: 24px;
+        color: #F7F3E3;
+      }
+    }
+
+    &-list {
+      background-color: #6F1A07;
+      padding: 0;
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      color: #F7F3E3;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(247, 243, 227, 0.2);
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #8a2009;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .menu-item-icon {
+        font-size: 24px;
+        color: #F7F3E3;
+        margin-right: 1rem;
+        min-width: 24px;
+      }
+
+      .menu-item-label {
+        color: #F7F3E3;
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.board_of_directors_section{
+  @include respond(ipad) {
+    width: 100%;
+  }
+  background-color: #EEF0F2;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: #780116;
+  width: 100%;
+  
+  &_top{
+    display: flex;
+    flex-direction: row;
+  
+    hr{
+      width: 60%;
+    }
+    h2{
+      color:#780116;
+    }
+  }
+  &_bottom{
+    @include respond(ipad) {
+      flex-direction: column;
+    }
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    overflow-x: hidden;
+  }
+}
+
+article{
+  opacity: .5;
+  transition: all 0.3s linear;
+}
+article.activeSlide{
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide{
+  transform: translateX(-100%);
+}
+article.nextSlide{
+  transform: translateX(100%);
+}
+.card_bod{
+  @include respond(ipad) {
+    display: none!important;
+  }
+  align-items: center!important;
+
+  &_button{
+    width: 100%!important;
+  }
+}
+.card_bod_mobile{
+  @include respond(ipad) {
+    display: flex!important;
+  }
+  display: none!important;
+  img{
+    margin-bottom: 5%;;
+  }
+}
+
+

@@ -1,0 +1,53 @@
+.meetings_info{
+
+    &_container{
+        width: 100%;
+        margin: auto;
+    }      
+    
+    &_row{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        background-color: #AB011F!important;
+        padding: 3%;
+
+    }
+
+    &_col1, &_col2{
+        @include respond(phone) {
+            height: 100%;
+        }
+       color:#5f1212;
+       box-shadow: 2px 2px 2px #82839b46;
+        background-color: #f7fafc;
+        width: 40%;
+        height: 21em;
+        margin:2%;
+        padding: 5%;
+        border-radius: 1%;
+    }
+    
+}
+.coc_info{
+
+    &_col1, &_col2{
+        @include respond(phone) {
+            height: 100%;
+        }
+       color:#5f1212;
+       box-shadow: 2px 2px 2px #82839b46;
+        background-color: #f7fafc;
+        width: 40%;
+        height: 48em;
+        margin:2%;
+        padding: 5%;
+        border-radius: 1%;
+    }
+    
+}
+
+.intro_video{
+    background-color: #F34213;
+   
+}

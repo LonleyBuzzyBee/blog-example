@@ -1,0 +1,33 @@
+@mixin respond($breakpoint) {
+  //check parameter
+  @if $breakpoint == xsm {
+    @media (max-width: 375) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 412px) {
+      @content;
+    }
+  }
+  @if $breakpoint == ipad {
+    @media (max-width: 820px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    } 
+  }
+  @if $breakpoint == tab-land {
+    @media (min-width: 1920px) {
+      @content;
+    } 
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
