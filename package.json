@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
+  "homepage": "https://lonleybuzzybee.github.io/blog-example/",
   "scripts": {
-    "start": "react-scripts start",
+   "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,6 @@
   "bugs": {
     "url": "https://gitlab.com/oswc/website/issues"
   },
-  "homepage": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -52,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "web-vitals": "^2.1.4"
   }
 }
