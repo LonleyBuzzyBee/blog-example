@@ -1,22 +1,19 @@
 import React from 'react';
+import SectionHeader from '../section_header';
 import Supporters_card from './supporters_card';
-import {supporters} from '../../models/supporters';
-import Axios from 'axios';
-import { useState, useEffect } from 'react';
 
 
-const Supporters_and_affiliates = () => {
+const Supporters_and_affiliates = ({ supporters = [] }) => {
   
   return (
     <div className='supporters_and_affiliates_section'>
       <div className='supporters_and_affiliates_section_top'>
-        <ion-icon name="heart-circle-outline"></ion-icon>
-        <h2><strong>Supporters and affiliates</strong></h2>
+        <SectionHeader iconName="heart-circle-outline" title="Supporters and affiliates" />
       </div>
       <div className='supporters_and_affiliates_section_bottom'>
         {supporters.map((supporter) => {
           return (
-            <Supporters_card supporter={supporter}/>
+            <Supporters_card key={supporter.id} supporter={supporter}/>
           )
         })}
       </div>

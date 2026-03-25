@@ -1,0 +1,163 @@
+.connect_with_us {
+  &_container{
+    width: 100%;
+    margin: auto;
+    padding: 5%;
+    justify-content: center;
+    background-color: #2b2118;
+    border-radius: 10px;
+    box-shadow: 0 4px 2px -2px rgba(109, 129, 139, 0.313);
+  }
+  &_form_type {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  &_radio_label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #780116;
+    font-size: 14px;
+  }
+
+  &_radio {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_field {
+    margin-bottom: 20px;
+  }
+
+  &_label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #780116;
+    margin-bottom: 6px;
+  }
+
+  &_input,
+  &_textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #780116;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgba(247, 250, 252, 0.1);
+    color: #780116;
+    font-family: inherit;
+
+    &::placeholder {
+      color: rgba(247, 250, 252, 0.5);
+    }
+
+    &:focus {
+      border-color: #DE9151;
+      background-color: rgba(247, 250, 252, 0.15);
+    }
+  }
+
+  &_textarea {
+    resize: none;
+    min-height: 100px;
+  }
+
+  &_button {
+    width: 100%;
+    padding: 14px;
+    background-color: #af9164;
+    color: #000F08;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 30px 0 30px;
+
+    &:hover:not(:disabled) {
+      background-color: #c77a3f;
+      transform: scale(1.01);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  &_success {
+    text-align: center;
+    color: #4ade80;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+
+  &_error {
+    text-align: center;
+    color: #f87171;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+}
+
+// Update socials_card styles to work with new component
+.socials_card {
+  margin: auto;
+  width: 70%;
+  background-color: white!important;
+
+  &_title {
+    margin-bottom: 5% !important;
+    margin-top: 5% !important;
+    color: #780116;
+    text-align: center;
+  }
+
+  &_body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+
+  &_icon {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+    color: #780116;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-icon {
+      font-size: 48px;
+      color: #780116;
+    }
+
+    &:hover {
+      transform: scale(1.1) !important;
+      color: #DE9151;
+
+      ion-icon {
+        color: #DE9151;
+      }
+    }
+  }
+}
+

@@ -56,7 +56,7 @@ export default class Nav_Bar extends React.Component {
                 <NavLink href="/#/resources">RESOURCES</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://donorbox.org/oswc-human-rights-committee">DONATE</NavLink>
+                <NavLink href="https://www.gofundme.com/">DONATE</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

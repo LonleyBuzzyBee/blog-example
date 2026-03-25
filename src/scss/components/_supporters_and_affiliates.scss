@@ -12,14 +12,12 @@
    &_top{
      display: flex;
      flex-direction: row;
+     margin:auto 5% auto;
+
      
      hr{
        width: 55%;
-       
-      }
-      h2{
-        color:#780116;
-      }
+     }
     }
     
     &_bottom{
@@ -45,7 +43,7 @@
   align-items: center;
   
   strong{
-    color: #F34213!important;
+    color: #2b2118!important;
   }
   &_img{
     @include respond(ipad) {

@@ -5,7 +5,6 @@
   background-color: #EEF0F2;
 
   &-header{
-    color: #780116;
     padding-top: 2%;
     margin: auto 5% auto;
     display: flex;
@@ -79,7 +78,15 @@
   align-items: center;
 
   strong{
-    color: #DE9151;
+    color: #af9164;
+  }
+  
+  .card-title {
+    color: #af9164;
+    
+    strong {
+      color: #af9164;
+    }
   }
   hr{
     color:#DE9151;

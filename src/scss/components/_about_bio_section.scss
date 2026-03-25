@@ -1,7 +1,5 @@
 .about_bio_section{
-    @include respond(ipad) {
-    width: 100%;
-  }
+  width: 100%;
   background-color: #EEF0F2;
   display: flex;
   flex-direction: column;
@@ -15,8 +13,8 @@
     margin-bottom:2%;
   }
   u{
-    color:#DE9151;
-
+    color:#af9164;
+    text-decoration-color: #af9164;
   }
   
   ul{
@@ -43,32 +41,20 @@
   }
 
   &_bottom{
-    @include respond(ipad) {
+    display: flex;
     flex-direction: column;
     width: 100%;
-  }
-    display: flex;
-    width: 100%;
-
 
     &_1{
-      @include respond(ipad) {
-      flex-direction: column;
-      // width: fit-content;
-    }
-    align-items: center;
-    flex-flow:column wrap;
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  &_2{
-      @include respond(ipad) {
+      align-items: center;
       flex-direction: column;
       width: 100%;
+      justify-content: space-evenly;
     }
+    &_2{
       display: flex;
       flex-direction: column;
-  
+      width: 100%;
     }
   }
 }

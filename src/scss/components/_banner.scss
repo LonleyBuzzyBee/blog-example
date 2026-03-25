@@ -21,14 +21,135 @@
   margin-left: 3em;
 }
 .banner-bottom{
-    
     background-color: #780116;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2%;
     color: #BBB8B2;
-    p{
-      margin-top:2%;
+    padding: 3% 2% 2% 2%;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    u {
+      color: #af9164;
+      text-decoration-color: #af9164;
+    }
+
+    .footer-main {
+      margin-bottom: 2%;
+    }
+
+    .footer-column {
+      margin-bottom: 2rem;
+      
+      h5 {
+        color: #BBB8B2;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: #BBB8B2;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #af9164;
+              text-decoration: underline;
+              text-decoration-color: #af9164;
+            }
+          }
+        }
+      }
+
+      .footer-contact {
+        p {
+          margin: 0.5rem 0;
+          font-size: 0.85rem;
+          color: #BBB8B2;
+        }
+      }
+    }
+
+    .footer-divider {
+      height: 1px;
+      background-color: #af9164;
+      margin: 1.5rem 0;
+      width: 100%;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+
+      .footer-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+
+        a {
+          color: #BBB8B2;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: color 0.3s ease;
+
+          ion-icon {
+            font-size: 1.5rem;
+            color: #BBB8B2;
+          }
+
+          &:hover {
+            color: #F7F3E3;
+
+            ion-icon {
+              color: #F7F3E3;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      text-align: center;
+      margin-top: 1rem;
+
+      .footer-copyright-text {
+        p {
+          margin: 0;
+          font-size: 0.75rem;
+          color: #BBB8B2;
+          line-height: 1.6;
+
+          .footer-links {
+            a {
+              color: #af9164;
+              text-decoration: none;
+              margin: 0 0.25rem;
+              transition: color 0.3s ease;
+
+              &:hover {
+                color: #af9164;
+                text-decoration: underline;
+                text-decoration-color: #af9164;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .container-carousel{
@@ -70,4 +191,17 @@
   color: #780116;
   background-color: #EEF0F2;
  
+  h1.display-4 {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    
+    .about_bio_section_icon {
+      display: inline-flex;
+      align-items: center;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      line-height: 1;
+    }
+  }
 }

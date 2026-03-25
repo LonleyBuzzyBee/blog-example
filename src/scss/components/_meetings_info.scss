@@ -3,15 +3,19 @@
     &_container{
         width: 100%;
         margin: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }      
     
     &_row{
         display: flex;
         align-items: center;
-        margin: auto;
+        margin: 0;
         background-color: #AB011F!important;
         padding: 3%;
-
+        box-sizing: border-box;
     }
 
     &_col1, &_col2{
@@ -21,28 +25,76 @@
        color:#5f1212;
        box-shadow: 2px 2px 2px #82839b46;
         background-color: #f7fafc;
-        width: 40%;
+        flex: 0 0 calc(50% - 2%);
+        max-width: calc(50% - 2%);
         height: 21em;
-        margin:2%;
+        margin: 1%;
         padding: 5%;
         border-radius: 1%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
     
 }
 .coc_info{
 
-    &_col1, &_col2{
+    &_col1{
         @include respond(phone) {
             height: 100%;
         }
-       color:#5f1212;
-       box-shadow: 2px 2px 2px #82839b46;
+
+        color:#2b2118;
+        box-shadow: 2px 2px 2px #82839b46;
         background-color: #f7fafc;
-        width: 40%;
-        height: 48em;
+        height: auto;
+        min-height: fit-content;
         margin:2%;
-        padding: 5%;
+        padding: 10%;
         border-radius: 1%;
+        box-sizing: border-box;
+        overflow: visible;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+        
+        p, h4, ul, li, strong, em {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 80%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        p, h4, ul {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+        
+        ul {
+            padding-left: 1.5em;
+            margin: 0;
+            overflow: hidden;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        li {
+            margin-bottom: 0.5em;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            font-size: inherit;
+            line-height: 1.4;
+        }
+        img{
+            width: 10em;
+            margin: 0 auto;
+            display: block;
+        }
     }
     
 }

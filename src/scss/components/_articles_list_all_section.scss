@@ -8,23 +8,49 @@
   border-color: #780116;
   display: flex!important;
   flex-direction: row!important;
+  align-items: center;
   width:40%;
   padding:1%;
   margin: 2%;
   text-decoration: none;
   
+  &_text{
+    flex: 1;
+    text-align: left;
+    padding-right: 2%;
+  }
+  
   &_image{
     @include respond(ipad) {
       width: 100%!important;
+      aspect-ratio: 1 / 1;
     }
-    width: 40%!important;
-    margin-right: 2%;
+    width: 150px!important;
+    height: 150px!important;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    border-radius: 4px;
   }
+  
   h4{
     color: #780116;
+    text-align: left;
+    margin: 0 0 8px 0;
   }
+  
+  &_title_small {
+    font-size: 0.9em;
+  }
+  
   p{
     color: #78011791;
+    text-align: left;
+    margin: 0;
+  }
+  
+  &_meta_small {
+    font-size: 0.85em;
   }
 }
 .article_item_video{

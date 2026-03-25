@@ -1,27 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab4214b9.css",
-    "main.js": "/static/js/main.8a59e62e.js",
-    "static/media/oswc_h1_jude.mp4": "/static/media/oswc_h1_jude.a2936901273253847051.mp4",
-    "static/media/oswc_h2_prev.mp4": "/static/media/oswc_h2_prev.aebddd40da980c530f47.mp4",
-    "static/media/mslide6.png": "/static/media/mslide6.f0bb52e1439048462382.png",
-    "static/media/mslide3.png": "/static/media/mslide3.9f8ecc39a649de1e104a.png",
-    "static/media/mslide2.png": "/static/media/mslide2.2c93d7a7811bb7d298d8.png",
-    "static/media/mslide4.png": "/static/media/mslide4.418a9e235759cd3f7dfc.png",
-    "static/media/mslide5.png": "/static/media/mslide5.50573707c36000a37f95.png",
-    "static/media/mslide8.png": "/static/media/mslide8.261b90fa0811518cf2ba.png",
-    "static/media/slide3.png": "/static/media/slide3.91e710df3a43b9580839.png",
-    "static/media/slide5.png": "/static/media/slide5.834afa6698e37a6519b5.png",
-    "static/media/slide1.png": "/static/media/slide1.086e788968587ccf597f.png",
-    "static/media/slide4.png": "/static/media/slide4.8ac6b69d7f8aa3217191.png",
-    "static/media/slide2.png": "/static/media/slide2.fcc2522b38ac34182aaf.png",
-    "static/media/oswclogo.PNG": "/static/media/oswclogo.ae0e922aa23867b1b035.PNG",
+    "main.css": "/static/css/main.8520e22d.css",
+    "main.js": "/static/js/main.4986f2d7.js",
+    "static/media/slide2.png": "/static/media/slide2.5a66d0a8586ce85cbb1e.png",
+    "static/media/slide1.png": "/static/media/slide1.fcbb6769a2132b3f8c89.png",
+    "static/media/s_k_logo.png": "/static/media/s_k_logo.0fbbcfe7057b233cfbe5.png",
+    "static/media/mslide3.png": "/static/media/mslide3.74c884ac4765de72c39a.png",
+    "static/media/slide4.png": "/static/media/slide4.07a9b55003470aa0f46d.png",
+    "static/media/slide3.png": "/static/media/slide3.10cf89db1a9e02b53a2d.png",
+    "static/media/mslide1.png": "/static/media/mslide1.b74e03b977fde735256f.png",
+    "static/media/mslide2.png": "/static/media/mslide2.b1279f540f15e4739431.png",
     "index.html": "/index.html",
-    "main.ab4214b9.css.map": "/static/css/main.ab4214b9.css.map",
-    "main.8a59e62e.js.map": "/static/js/main.8a59e62e.js.map"
+    "main.8520e22d.css.map": "/static/css/main.8520e22d.css.map",
+    "main.4986f2d7.js.map": "/static/js/main.4986f2d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab4214b9.css",
-    "static/js/main.8a59e62e.js"
+    "static/css/main.8520e22d.css",
+    "static/js/main.4986f2d7.js"
   ]
 }

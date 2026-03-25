@@ -14,7 +14,9 @@ ReactDOM.render(
      <div className="App">
       <Banner />
       <Nav_Bar/>
-      <App />
+      <div className="app-content">
+        <App />
+      </div>
       <Copyright_footer/>
       </div>
   </React.StrictMode>,

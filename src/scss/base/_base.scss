@@ -15,7 +15,23 @@ code {
     monospace;
 }
 .App{
-  background-color: #000F08;
+  // background-color: #000F08;
   font-family: "pragmatica", sans-serif;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

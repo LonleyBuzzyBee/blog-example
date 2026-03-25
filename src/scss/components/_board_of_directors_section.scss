@@ -12,12 +12,11 @@
   &_top{
     display: flex;
     flex-direction: row;
+    margin:auto 5% auto;
+
   
     hr{
       width: 60%;
-    }
-    h2{
-      color:#780116;
     }
   }
   &_bottom{
@@ -28,6 +27,40 @@
     width: 100%;
     padding: 5%;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    .owl-theme {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+      .owl-stage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .owl-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .card {
+          margin: 0 auto;
+          max-width: 100%;
+          
+          .card-title {
+            color: #af9164;
+            
+            strong {
+              color: #af9164;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
