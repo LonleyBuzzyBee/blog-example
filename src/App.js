@@ -12,11 +12,7 @@ import Code_of_conduct from './components/code_of_conduct_section';
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from './firebase';
-import {
-  BrowserRouter as Router, HashRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 
 
@@ -81,33 +77,31 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={
-          <div className="parent-container">
-            <Carousel />
-            <Landing_bio />
-            <Meetings_info />
-            <Articles_section articles={articles} />
-          </div>
-        } />
-        <Route path="/about" element={
-          <div className="parent-container">
-            <Bio_title />
-            <Carousel2 />
-            <About_bio_section />
-            <Code_of_conduct/>
-            <Board_of_directors members={members} />
-            <Supporters_and_affiliates supporters={supporters} />
-          </div>
-        } />
-        <Route path="/resources" element={
-          <div className="parent-container">
-            <Articles_list_all_section articles={articles} podcasts={podcasts} videos={videos} loading={loading} />
-          </div>
-        } />
-      </Routes>
-    </HashRouter>
+    <Routes>
+      <Route path="/" element={
+        <div className="parent-container">
+          <Carousel />
+          <Landing_bio />
+          <Meetings_info />
+          <Articles_section articles={articles} />
+        </div>
+      } />
+      <Route path="/about" element={
+        <div className="parent-container">
+          <Bio_title />
+          <Carousel2 />
+          <About_bio_section />
+          <Code_of_conduct/>
+          <Board_of_directors members={members} />
+          <Supporters_and_affiliates supporters={supporters} />
+        </div>
+      } />
+      <Route path="/resources" element={
+        <div className="parent-container">
+          <Articles_list_all_section articles={articles} podcasts={podcasts} videos={videos} loading={loading} />
+        </div>
+      } />
+    </Routes>
   );
 }
 

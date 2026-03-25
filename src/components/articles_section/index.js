@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SectionHeader from '../section_header';
 import Card_article from '../card_article';
 import { Button } from 'reactstrap';
@@ -26,7 +27,7 @@ const Articles_section = ({ articles: articlesProp }) => {
         })}
       </div>
       <div className='section-bottom'>
-        <a href="/#/resources"><Button className='section-bottom-button'>More Articles</Button></a>
+        <Link to="/resources"><Button className='section-bottom-button'>More Articles</Button></Link>
       </div>
     </div>
   );

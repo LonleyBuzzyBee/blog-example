@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/s_k_logo.png'
 import '../../scss/main.scss'
 import {
@@ -9,6 +10,11 @@ import {
   Nav,
   NavItem,
   NavLink} from 'reactstrap';
+
+// react-router's Link is a forwardRef object; reactstrap `tag` only allows string | function.
+function NavbarBrandLink(props) {
+  return <Link {...props} />;
+}
 
 export default class Nav_Bar extends React.Component {
   constructor(props) {
@@ -42,18 +48,18 @@ export default class Nav_Bar extends React.Component {
       <div className="nav-container-div">
         {/* Desktop Navbar */}
         <Navbar className="sticky-top desktop-navbar" expand="md">
-          <NavbarBrand href="/#"><img className='logo-oswc' alt="logo" src={logo}/></NavbarBrand>
+          <NavbarBrand tag={NavbarBrandLink} to="/"><img className='logo-oswc' alt="logo" src={logo}/></NavbarBrand>
           <NavbarToggler className="navbar-light" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="parent-nav" navbar>
               <NavItem>
-                <NavLink href="/">HOME</NavLink>
+                <Link className="nav-link" to="/">HOME</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/#/about">ABOUT</NavLink>
+                <Link className="nav-link" to="/about">ABOUT</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/#/resources">RESOURCES</NavLink>
+                <Link className="nav-link" to="/resources">RESOURCES</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="https://www.gofundme.com/">DONATE</NavLink>
@@ -85,18 +91,18 @@ export default class Nav_Bar extends React.Component {
                 </button>
               </div>
               <div className="mobile-menu-list">
-                <a className="mobile-menu-item" href="/" onClick={this.closeMobileMenu}>
+                <Link className="mobile-menu-item" to="/" onClick={this.closeMobileMenu}>
                   <ion-icon name="home-outline" className="menu-item-icon"></ion-icon>
                   <span className="menu-item-label">HOME</span>
-                </a>
-                <a className="mobile-menu-item" href="/#/about" onClick={this.closeMobileMenu}>
+                </Link>
+                <Link className="mobile-menu-item" to="/about" onClick={this.closeMobileMenu}>
                   <ion-icon name="information-circle-outline" className="menu-item-icon"></ion-icon>
                   <span className="menu-item-label">ABOUT</span>
-                </a>
-                <a className="mobile-menu-item" href="/#/resources" onClick={this.closeMobileMenu}>
+                </Link>
+                <Link className="mobile-menu-item" to="/resources" onClick={this.closeMobileMenu}>
                   <ion-icon name="book-outline" className="menu-item-icon"></ion-icon>
                   <span className="menu-item-label">RESOURCES</span>
-                </a>
+                </Link>
                 <a className="mobile-menu-item" href="https://donorbox.org/oswc-human-rights-committee" onClick={this.closeMobileMenu}>
                   <ion-icon name="heart-outline" className="menu-item-icon"></ion-icon>
                   <span className="menu-item-label">DONATE</span>
