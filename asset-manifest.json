@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/blog-example/static/css/main.821e390c.css",
+    "main.js": "/blog-example/static/js/main.944ab33b.js",
+    "static/media/slide2.png": "/blog-example/static/media/slide2.5a66d0a8586ce85cbb1e.png",
+    "static/media/slide1.png": "/blog-example/static/media/slide1.fcbb6769a2132b3f8c89.png",
+    "static/media/s_k_logo.png": "/blog-example/static/media/s_k_logo.0fbbcfe7057b233cfbe5.png",
+    "static/media/mslide3.png": "/blog-example/static/media/mslide3.74c884ac4765de72c39a.png",
+    "static/media/slide4.png": "/blog-example/static/media/slide4.07a9b55003470aa0f46d.png",
+    "static/media/slide3.png": "/blog-example/static/media/slide3.10cf89db1a9e02b53a2d.png",
+    "static/media/mslide1.png": "/blog-example/static/media/mslide1.b74e03b977fde735256f.png",
+    "static/media/mslide2.png": "/blog-example/static/media/mslide2.b1279f540f15e4739431.png",
+    "static/media/s_k_logo_2.png": "/blog-example/static/media/s_k_logo_2.cba851d3d310cf0dc3b4.png",
+    "index.html": "/blog-example/index.html",
+    "main.821e390c.css.map": "/blog-example/static/css/main.821e390c.css.map",
+    "main.944ab33b.js.map": "/blog-example/static/js/main.944ab33b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.821e390c.css",
+    "static/js/main.944ab33b.js"
+  ]
+}
